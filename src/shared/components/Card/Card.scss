@@ -1,0 +1,16 @@
+@import '../../styles/global.scss';
+
+.card-wrap {
+  position: relative;
+  overflow: hidden;
+  .card {
+    min-height: 150px;
+    border-radius: 0px !important;
+    border: 2px solid $textBlackColor;
+    .v1 {
+      position: absolute;
+      border-left: 5px solid $pinkcolor;
+      height: 100%;
+    }
+  }
+}

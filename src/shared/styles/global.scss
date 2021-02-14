@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 55px;
+}
+
+@import './varaibles';
+@import './Mixins';
+@import './extends';
+
+.center {
+  @extend verticleCenter;
+}
+
+.mg-top-10 {
+  @include marginTop(10px);
+}
+
+.mg-top-17 {
+  @include marginTop(17px);
+}
+.mg-bottom-10 {
+  @include marginBotton(10px);
+}
+
+.mg-top-20 {
+  @include marginTop(20px);
+}
+
+.mg-bottom-20 {
+  @include marginBotton(20px);
+}
+
+.mg-left-20 {
+  @include marginLeft(20px);
+}
+
+.mg-right-20 {
+  @include marginRight(20px);
+}
+
+.parent {
+  @extend parentElement;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.section-container {
+  padding: 0.5rem 1rem;
+}
+
+.header-wrap {
+  @include marginTop(0px);
+  @include marginBotton(20px);
+}

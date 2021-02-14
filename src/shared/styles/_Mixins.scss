@@ -1,0 +1,25 @@
+@mixin clearfix {
+  &::after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+@mixin marginTop($marginTop) {
+  margin-top: $marginTop;
+}
+
+@mixin marginBotton($marginBottom) {
+  margin-bottom: $marginBottom;
+}
+
+@mixin marginLeft($marginLeft) {
+  margin-left: $marginLeft;
+}
+
+@mixin marginRight($marginRight) {
+  margin-right: $marginRight;
+}
